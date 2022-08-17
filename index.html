@@ -5,23 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mad-lib-world</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
+<header>
+    <h1>Mad Lib World</h1>
+    <h2>breakin' the rulez</h2>
+    <p>Fill in words to make a story</p>
+</header>
+<main>
+     <form id="madlib-form" name="madlib-form" onsubmit="submitmadlib(event)">
+        <section id="madlib-input"></section>
 
+         <div class="input-group">
+            <label for="number">number</label>
+            <input type="text" id="number" name="number" required>
+         </div> 
 
-    <div>
-        <h2>Mad Lib World</h2>
-    <form>
+         <div class="input-group">
+            <label for="adjective_1">adjective</label>
+            <input type="text" id="adjective_1" name="adjective_1" required>
+         </div>
 
-        <input placeholder="Noun" type="text" id="one" onblur="tellTheStory()">
-    
+         <div class="input-group">
+            <label for="noun_1">noun</label>
+            <input type="text" id="noun_1" name="noun_1" required>
+         </div>
+
+         <div class="input-group">
+            <label for="noun_2">noun</label>
+            <input type="text" id="noun_2" name="noun_2" required>
+         </div>
+
+         <div class="input-group">
+            <label for="noun_3">noun</label>
+            <input type="text" id="noun_3" name="noun_3" required>
+         </div>
+
+         <div class="input-group">
+            <label for="adjective_2">adjective</label>
+            <input type="text" id="adjective_2" name="adjective_2" required>
+         </div>
+
+         <div class="input-group">
+            <label for="noun_4">noun</label>
+            <input type="text" id="noun_4" name="noun_4" required>
+         </div>
+
+         <div class="input-group">
+            <label for="verbing_1">verb-ing</label>
+            <input type="text" id="verbing_1" name="verbing_1" required>
+         </div>
+
+         <div class="input-group">
+            <label for="verbing_2">verb-ing</label>
+            <input type="text" id="verbing_2" name="verbing_2" required>
+         </div>
+
+         <div class="input-group">
+            <label for="verbing_3">verb-ing</label>
+            <input type="text" id="verbing_3" name="verbing_3" required>
+         </div>
+
+         <div class="input-group">
+            <label for="beverage">beverage</label>
+            <input type="text" id="beverage" name="beverage" required>
+         </div>
+
+         <div class="input-group">
+            <label for="food">food</label>
+            <input type="text" id="food" name="food" required>
+         </div>  
+       </section>
+        <section id="madlib-submit">
+            <button type="submit">confabulate</button>
+        </section>
     </form>
-    </div>
-    <div>
-        <p id="storytime"></p>
-    </div>
-
+   <section id="completed-story" class="hide">
+    
+   </section>
+   
+</main>
 </body>
 
 <script src="script.js"></script>
